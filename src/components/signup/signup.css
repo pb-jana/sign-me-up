@@ -1,0 +1,33 @@
+.signup {
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    background: whitesmoke;
+    box-shadow: 0 0 20px 5px gray;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+.signup > input {
+    width: 87%;
+    color: black;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+.signup > .button {
+    width: 90%;
+    background: rgb(33, 152, 191);
+    color: whitesmoke;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
+    border: 1px solid rgb(33, 152, 191);
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+}

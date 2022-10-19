@@ -1,0 +1,34 @@
+.contactus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px gray;
+    position: relative;
+}
+
+.contactus > input {
+    width: 87%;
+    color: black;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    outline: none;
+    font-size: 1rem;
+}
+
+.contactus > .button {
+    background: rgb(33, 152, 191);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: 0.7rem 0;
+    border: 1px solid rgb(33, 152, 191);
+    border-radius: 100px;
+    outline: none;
+    cursor: pointer;
+}
