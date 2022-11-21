@@ -1,6 +1,24 @@
 # Sign Me Up
 This is a Web app built using ReactJS and MongoDB. Able to user registration and user signin by their E-mail id and Password.
 
+# In Short
+How to run project :
+
+To start front end ( sign-me-up folder ) :
+
+Use Terminal :
+
+[1] Move to sign-me-up folder from home directory : `cd sign-me-up/`
+[2] `npm start`
+
+To start back end ( sign-me-up-database folder ) :
+
+Use Second Terminal :
+
+[1] Move to sign-me-up-database folder from home directory : `cd sign-me-up-database/`
+[2] `npx nodemon`
+
+
 Sign In ==>> Home Page
 <img width="1440" alt="Screenshot 2022-11-21 at 18 52 29" src="https://user-images.githubusercontent.com/95628601/203066505-41e0ff6b-eaba-4eea-81f9-bca1a0b81145.png">
 
@@ -13,6 +31,12 @@ Sign Up ==>> Registration Page
 
 Contact Us Page ==>> After Successfull Sign In User Will Be Able to View This Page
 <img width="1440" alt="Screenshot 2022-11-21 at 18 53 34" src="https://user-images.githubusercontent.com/95628601/203066640-caf5ae0b-9e67-469f-8f0d-89760bc7286b.png">
+
+
+
+
+
+
 
 
 
