@@ -1,8 +1,14 @@
 {
     "cSpell.words": [
+        "Avenir",
         "Contactus",
+        "glassmorphism",
         "mogoose",
+        "Nakamoto",
+        "Satoshi",
         "Signin",
-        "signup"
-    ]
+        "signup",
+        "VIRCUR"
+    ],
+    "git.ignoreLimitWarning": true
 }
