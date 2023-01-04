@@ -28,6 +28,19 @@ const userSchema = new mongoose.Schema({
 const User = new mongoose.model("User", userSchema)
 
 
+// for contactus
+// create user schema
+const dataSchema = new mongoose.Schema({
+    country: String,
+    student: String,
+    employee: String,
+    messages: String
+})
+
+// model create
+const Data = new mongoose.model("Data", dataSchema)
+
+
 
 // Routes
 // to signing in
@@ -39,13 +52,13 @@ app.post("/signin", (req, res)=> {
     User.findOne({email: email}, (err, user)=>{
         if(user){
             if(password === user.password){
-                res.send({message: "Welcome !! You Are Successfully Signed Up !!", user: user})
+                res.send({message: "Welcome !! You Are Successfully Signed In !!", user: user})
             }else{
-                res.send({message: "Incorrect Password, Try Again !!"})
+                res.send({message: "Incorrect E-mail or Password, Try Again !!"})
             }
 
         }else{
-            res.send({message: "New Here !! Kindly Signed Up Before Signing In !!"})
+            res.send({message: "Empty Field !! Kindly Fill All Before Signing In !!"})
         }
 
     })
@@ -79,6 +92,33 @@ app.post("/signup", (req, res)=> {
     })
 })
 
+
+// contactus
+// to submit data and redirect to VIRCUR app
+app.post("http://localhost:3001", (req, res)=> {
+    // res.send("My API signup")
+    const { country, student, employee, messages }=(req.body)
+
+
+    
+    const data = new Data({
+        country,
+        student,
+        employee,
+        messages
+    })
+    // user data saving
+    data.save(err => {
+        if(err){
+            res.send(err)
+        }else{
+            res.send({message: "User Data Successfully Stored !! Let's Signin !!"})
+        } 
+    })
+})
+
+
+
 app.listen(9002,()=>{
-    console.log("Started at Port 9002")
+    console.log("DB Started at Port 9002")
 })
